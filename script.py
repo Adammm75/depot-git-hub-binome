@@ -5,12 +5,12 @@ nombre_secret = 35
 
 print("🎯 Bienvenue dans le jeu ! Devine le nombre secret entre 1 et 100.")
 
-# Boucle infinie jusqu'à ce que l'utilisateur trouve
+# Boucle infinie jusqu'à ce que l'utilisateur trouveeeeeeeee
 while True:
-    # Demande à l'utilisateur
+    # Demande à l'utilisateureeeeeeeee
     essai = int(input("👉 Entre ton nombre : "))
 
-    # Vérifie si c'est correct
+    # Vérifie si c'est correcteeeeeeeeeee
     if essai == nombre_secret:
         print("✅ Bravo ! Tu as trouvé le bon nombre 🎉")
         break
