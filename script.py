@@ -1,20 +1,28 @@
-# Jeu : deviner le nombre
+# 🎮 Jeu : Deviner le nombre mystère 🎯
 
 # Nombre secret
-nombre_secret = 35
+NOMBRE_SECRET = 35
 
-print("🎯 Bienvenue dans le jeu ! Devine le nombre secret entre 1 et 100.")
+print("======================================")
+print("🔢  Bienvenue dans le jeu de devinettes !")
+print("🎯  Ton objectif : trouver le nombre secret entre 1 et 100.")
+print("======================================\n")
 
-# Boucle infinie jusqu'à ce que l'utilisateur trouveeeeeeeee
+# Boucle jusqu'à ce que l'utilisateur devine
 while True:
-    # Demande à l'utilisateureeeeeeeee
-    essai = int(input("👉 Entre ton nombre : "))
+    try:
+        # 🧠 Demande à l'utilisateur
+        essai = int(input("👉 Entre ton nombre : "))
 
-    # Vérifie si c'est correcteeeeeeeeeee
-    if essai == nombre_secret:
-        print("✅ Bravo ! Tu as trouvé le bon nombre 🎉")
-        break
-    elif essai < nombre_secret:
-        print("📉 Trop petit ! Essaie un nombre plus grand.")
-    else:
-        print("📈 Trop grand ! Essaie un nombre plus petit.")
+        # ✅ Vérifie si c'est correct
+        if essai == NOMBRE_SECRET:
+            print("\n🎉 Bravo ! Tu as trouvé le bon nombre ✅")
+            print("🏆 Félicitations, mission accomplie !")
+            break
+        elif essai < NOMBRE_SECRET:
+            print("📉 Trop petit ! 💡 Essaie un nombre plus GRAND.\n")
+        else:
+            print("📈 Trop grand ! 💡 Essaie un nombre plus PETIT.\n")
+
+    except ValueError:
+        print("⚠️ Entrée invalide ! Merci d’entrer un nombre entier.\n")
